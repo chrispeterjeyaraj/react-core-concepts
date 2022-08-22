@@ -14,6 +14,7 @@ import ExampleHOCFuncSharedComponent from './components/HOC/ExampleHOCFuncShared
 import ExampleRenderPropComponent from './components/RenderProps/ExampleRenderPropComponent';
 import ExampleRenderPropFuncSharedComponent from './components/RenderProps/ExampleRenderPropFuncSharedComponent';
 import ExampleRenderPropChildComponent from './components/RenderProps/ExampleRenderPropChildComponent';
+import ParentContextComponent from './components/ContextAPI/ParentContextComponent';
 function App() {
   // const [name, setName] = useState("...Will display value if received from Props component")
   // const getName = (childName) => {
@@ -36,8 +37,9 @@ function App() {
     </ErrorBoundary> */}
     {/* <ExampleHOCChildComponent />
     <ExampleHOCFuncSharedComponent /> */}
-    <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropChildComponent count={count} incrementcount={incrementcount}/>}/>
-    <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropFuncSharedComponent count={count} incrementcount={incrementcount}/>}/>
+    {/* <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropChildComponent count={count} incrementcount={incrementcount}/>}/>
+    <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropFuncSharedComponent count={count} incrementcount={incrementcount}/>}/> */}
+    <ParentContextComponent />
     </>
   );
 }
