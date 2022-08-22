@@ -9,7 +9,11 @@ import RefsExample from './components/RefsExamples/RefsExample';
 import PortalsDemo from './components/Portals/PortalsDemo';
 import ErrorBoundary from './components/ErrorBoundaries/ErrorBoundary';
 import ErrorBoundaryExample from './components/ErrorBoundaries/ErrorBoundaryExample';
-
+import ExampleHOCChildComponent from './components/HOC/ExampleHOCChildComponent';
+import ExampleHOCFuncSharedComponent from './components/HOC/ExampleHOCFuncSharedComponent';
+import ExampleRenderPropComponent from './components/RenderProps/ExampleRenderPropComponent';
+import ExampleRenderPropFuncSharedComponent from './components/RenderProps/ExampleRenderPropFuncSharedComponent';
+import ExampleRenderPropChildComponent from './components/RenderProps/ExampleRenderPropChildComponent';
 function App() {
   // const [name, setName] = useState("...Will display value if received from Props component")
   // const getName = (childName) => {
@@ -27,9 +31,13 @@ function App() {
     {/* <ExamplePureComponent /> */}
     {/* <RefsExample /> */}
     {/* <PortalsDemo /> */}
-    <ErrorBoundary>
+    {/* <ErrorBoundary>
         <ErrorBoundaryExample simulateError={false}></ErrorBoundaryExample>
-    </ErrorBoundary>
+    </ErrorBoundary> */}
+    {/* <ExampleHOCChildComponent />
+    <ExampleHOCFuncSharedComponent /> */}
+    <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropChildComponent count={count} incrementcount={incrementcount}/>}/>
+    <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropFuncSharedComponent count={count} incrementcount={incrementcount}/>}/>
     </>
   );
 }
