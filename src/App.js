@@ -17,6 +17,7 @@ import ExampleRenderPropChildComponent from './components/SharingDataBetweenComp
 import ParentContextComponent from './components/SharingDataBetweenComponents/ContextAPI/ParentContextComponent';
 import UseEffectComponent from './components/useEffectUseCases/UseEffectComponent';
 import FetchDataFromAPI from './components/FetchingDataFromAPI/FetchDataFromAPI';
+import ParentComponent from './components/UseContextAndReducers/ParentComponent';
 function App() {
   // const [name, setName] = useState("...Will display value if received from Props component")
   // const getName = (childName) => {
@@ -43,7 +44,8 @@ function App() {
     <ExampleRenderPropComponent render={(count, incrementcount) => <ExampleRenderPropFuncSharedComponent count={count} incrementcount={incrementcount}/>}/> */}
     {/* <ParentContextComponent /> */}
     {/* <UseEffectComponent /> */}
-    <FetchDataFromAPI />
+    {/* <FetchDataFromAPI /> */}
+    <ParentComponent />
     </>
   );
 }
