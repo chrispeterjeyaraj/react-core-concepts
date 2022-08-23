@@ -6,9 +6,12 @@ const UseEffectComponent = () => {
     // without dependency array the setname will keep running every 2 seconds
     // and will trigger re-render
     // useEffect(() => {
-    //     setInterval(() => {
+    //    const interval = setInterval(() => {
     //         setName(`${name}_${shortid.generate()}_without dependency array`);
     //     },2000)
+        // return (() => {
+        //     clearInterval(interval);
+        // })
     // })
 
     // const handleNameChange = () => {
