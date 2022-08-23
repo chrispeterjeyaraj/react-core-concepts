@@ -18,6 +18,7 @@ import ParentContextComponent from './components/SharingDataBetweenComponents/Co
 import UseEffectComponent from './components/useEffectUseCases/UseEffectComponent';
 import FetchDataFromAPI from './components/FetchingDataFromAPI/FetchDataFromAPI';
 import ParentComponent from './components/UseContextAndReducers/ParentComponent';
+import FetchDataFromReducer from './components/FetchingDataUsingReducer/FetchDataFromReducer';
 function App() {
   // const [name, setName] = useState("...Will display value if received from Props component")
   // const getName = (childName) => {
@@ -45,7 +46,8 @@ function App() {
     {/* <ParentContextComponent /> */}
     {/* <UseEffectComponent /> */}
     {/* <FetchDataFromAPI /> */}
-    <ParentComponent />
+    {/* <ParentComponent /> */}
+    <FetchDataFromReducer />
     </>
   );
 }
